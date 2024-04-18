@@ -1,13 +1,41 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0; /* Reset default margins */
+  background-color: #f0f0f0; /* Example light gray background */
+  font-family: Arial, sans-serif; 
 }
+
+h1 {
+  text-align: center;
+}
+
+#root, #map-container { /* Assuming #map-container is your map's div */
+  width: 100%; 
+  height: 500px; 
+  margin: 0 auto;  /* Centers the map horizontally */
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+header {
+  text-align: center; 
+  background-color: #f0f0f0; /* Match body color for visual continuity */
+  padding: 15px; 
+}
+
+main {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack map and info section vertically */
+}
+
+#map-container {
+  width: 100%; 
+  height: 50vh; /* Assign 50% viewport height to the map */
+}
+
+#city-info {
+  height: 50vh; /* Info section takes the remaining height */
+  overflow-y: auto; /* Enable scrolling for this section */
 }

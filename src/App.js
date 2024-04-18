@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Map from './Map'; 
+import './App.css'; 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div> {/* You can add overall styling to this div if needed */}
+      <header>
+        <h1>Planada</h1>
+        <h3>Why plan your future anywhere else?</h3>
       </header>
+      <main>
+        <div id="map-container"><Map/></div>
+        <section id="city-info">
+        </section> 
+      </main>
     </div>
   );
 }
 
-export default App;
+export default App; 
