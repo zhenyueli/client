@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Map from './Map'; 
+import DieselData from './DieselData';
 import './App.css'; 
+
 
 function App() {
   return (
